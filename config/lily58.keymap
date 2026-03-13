@@ -70,7 +70,9 @@
             >;
         };
 
-        extra_1 { status = "reserved"; };
+        bideo_game { display-name = "Bideo Game";
+            bindings = <>;
+        };
 
         extra_2 { status = "reserved"; };
 
