@@ -74,6 +74,15 @@
 
         extra_2 { status = "reserved"; };
 
-        extra_3 { status = "reserved"; };
+        bideo_game {
+            display-name = "Bideo Game";
+            bindings = <
+&kp ESC  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4                           &trans  &trans    &trans  &trans  &trans  &trans
+&kp N5   &kp TAB    &kp Q   &kp W   &kp E   &kp R                            &trans  &trans    &trans  &trans  &trans  &trans
+&kp N6   &kp LSHFT  &kp A   &kp S   &kp D   &kp F                            &trans  &kp J     &trans  &trans  &trans  &trans
+&kp N7   &kp LCTRL  &kp Z   &kp X   &kp C   &kp V   &kp G        &kp LS(F2)  &trans  &trans    &trans  &trans  &trans  &trans
+                            &kp T   &kp H   &kp B   &kp SPACE    &kp RET     &to 0   &kp BSPC  &trans
+            >;
+        };
     };
 };
