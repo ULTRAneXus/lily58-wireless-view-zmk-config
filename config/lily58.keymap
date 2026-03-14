@@ -68,8 +68,6 @@
 
         extra_1 { status = "reserved"; };
 
-        extra_2 { status = "reserved"; };
-
         bideo_game {
             display-name = "Bideo Game";
             bindings = <
@@ -78,6 +76,17 @@
 &kp N6   &kp LSHFT  &kp A   &kp S   &kp D   &kp F                            &trans  &kp J     &trans  &trans  &trans  &trans
 &kp N7   &kp LCTRL  &kp Z   &kp X   &kp C   &kp V   &kp G        &kp LS(F2)  &trans  &trans    &trans  &trans  &trans  &trans
                             &kp T   &kp H   &kp B   &kp SPACE    &kp RET     &to 0   &kp BSPC  &trans
+            >;
+        };
+
+        colemak_dh {
+            display-name = "Colemak DH";
+            bindings = <
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
+&kp TAB    &kp Q   &kp W   &kp F     &kp P     &kp B                          &kp J   &kp L     &kp U      &kp Y    &kp SEMI  &kp MINUS
+&kp LCTRL  &kp A   &kp R   &kp S     &kp T     &kp G                          &kp M   &kp N     &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C     &kp D     &kp V   &kp LBKT     &kp RBKT  &kp K   &kp H     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                           &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET   &mo 2   &kp BSPC  &kp RGUI
             >;
         };
     };
